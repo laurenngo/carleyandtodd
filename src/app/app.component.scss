@@ -5,6 +5,11 @@ $love-silver: #C0C0C0;
 $love-sangria: #682751;
 $love-aubergine: #320722;
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .accent-font {
     font-family: 'Bad Script', cursive;   
 }
@@ -52,11 +57,7 @@ main {
 }
 
 .home-header {
-    position: absolute;
-    right: 0;
-    width: 60%;
-    height: calc(100vh - 66px);
-    padding-top: 50px;
+    padding: 50px 36px;
 
     h1, h2 {
         color: $love-navy;
@@ -102,12 +103,16 @@ main {
     width: 90%;
 }
 
-.home-hero {
+.hero-container {
     border-right: 12px solid $love-navy;
-    width: auto;
-    height: 100vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 20% 20%;
+    min-height: 400px;
+}
+
+.home-hero {
+    width: 100%;
     padding-top: 66px;
 }
