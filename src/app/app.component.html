@@ -32,24 +32,32 @@
 
 <main class="container-fluid">
   <div class="content row no-gutters">
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-lg-4">
       <div class="hero-container" style="background: url(../assets/images/carley-and-todd-4.jpg) 20% 20%/cover no-repeat"></div>
     </div>
-    <div class="accent-font background-silver home-header col-12 col-md-8">
-      <h1>Carley + Todd</h1>
-      <h2>01 . 03 . 2019</h2>
-      <div class="regular-font location">
-        <div class="anderson-details">
-          <h4 class="accent-font">
-            <a class="color-aubergine" target="_blank" href="https://www.mcmenamins.com/anderson-school">McMenamin's Anderson School</a>
-          </h4>
-          <h4 class="accent-font">| Bothell, WA</h4>
+    <div class="accent-font background-silver home-header col-12 col-lg-8">
+      <div class="row">
+        <div class="col-xl-4 col-12">
+            <h1>Carley & Todd</h1>
+            <h2>01 . 03 . 2019</h2>
         </div>
-        <h6>Details coming soon.</h6>
+        <div class="col-xl-8 col-12">
+          <div class="regular-font location">
+              <div class="anderson-details">
+                <h5 class="accent-font">
+                  <a class="color-aubergine" target="_blank" href="https://www.mcmenamins.com/anderson-school">McMenamin's Anderson School | Bothell, WA</a>
+                </h5>
+              </div>
+              <h6 class="color-navy">In lieu of a gift registry, we would love for you to join us overnight at the Anderson school! Mention LOVE MACHINE during booking to get one of our blocked off rooms. See you there!</h6>
+              <a target="_blank" href="https://www.mcmenamins.com/anderson-school">
+                <button mdbBtn class="book-btn" type="button" outline="true" size="sm" mdbWavesEffect>Book your room</button>                            
+              </a>
+          </div>
+        </div>
       </div>
 
       <div class="rsvp-container regular-font">
-        <h3 class="accent-font">RSVP</h3>
+        <h4 class="accent-font">RSVP</h4>
         <form class="row">
             <div class="col-sm-6">   
                 <div class="md-form">
@@ -66,14 +74,18 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="md-form">
+                <div class="md-form message-form">
                   <textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage" class="form-control md-textarea"
                     mdbInputDirective></textarea>
                   <label for="materialContactFormMessage">Message</label>
                 </div>
+                <button mdbBtn type="button" color="white" outline="true" mdbWavesEffect>Submit RSVP</button>                
             </div>
         </form>
       </div>
     </div>
+        <div class="background-aubergine copyright">
+          <p>&#169; Lauren Go & Trevor Spears</p>
+        </div>
   </div>
 </main>
