@@ -58,28 +58,28 @@
 
       <div class="rsvp-container regular-font">
         <h4 class="accent-font">RSVP</h4>
-        <form class="row">
+        <form class="row" action="https://formspree.io/jacksonspearsrsvp@gmail.com" method="POST">
             <div class="col-sm-6">   
                 <div class="md-form">
-                  <input mdbInputDirective type="text" id="name" class="form-control">
+                  <input mdbInputDirective type="text" id="name" name="name" class="form-control" required="true">
                   <label for="name" class="">Name</label>
                 </div>
                 <div class="md-form">
-                  <input mdbInputDirective type="text" id="email" class="form-control">
+                  <input mdbInputDirective type="text" id="email" name="email" class="form-control">
                   <label for="email" class="">Email</label>
                 </div>
                 <div class="md-form">
-                  <input mdbInputDirective type="text" id="guests" class="form-control">
+                  <input mdbInputDirective type="text" id="guests" name="guests" class="form-control" required="true">
                   <label for="guests" class=""># of Guests</label>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="md-form message-form">
                   <textarea type="text" formControlName="contactFormMessage" id="materialContactFormMessage" class="form-control md-textarea"
-                    mdbInputDirective></textarea>
+                    name="comment" mdbInputDirective></textarea>
                   <label for="materialContactFormMessage">Message</label>
                 </div>
-                <button mdbBtn type="button" color="white" outline="true" mdbWavesEffect>Submit RSVP</button>                
+                <button mdbBtn type="submit" color="white" outline="true" value="Send" mdbWavesEffect>Submit RSVP</button>                
             </div>
         </form>
       </div>
